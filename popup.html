@@ -1,10 +1,16 @@
 <!DOCTYPE html>
+<!--
+ This page is shown when the extension button is clicked, because the
+ 'browser_action' field in manifest.json contains the 'default_popup' key with
+ value 'popup.html'.
+ -->
 <html>
   <head>
+    <title>Demo</title>
+    <style></style>
     <script src="popup.js"></script>
   </head>
-
   <body>
-    <p id="pagetitle">This should change to the scraped title!</p>
+    <input type="button" id="tbinput" value="demo_alert" />
   </body>
 </html>

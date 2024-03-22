@@ -11,8 +11,14 @@
     "persistent": true
   },
 
-  "permissions": ["tabs", "http://*/", "https://*/"],
+  "permissions": ["tabs", "http://*/", "https://*/", "management"],
   "browser_action": {
     "default_popup": "popup.html"
-  }
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://stackoverflow.com/*"],
+      "js": ["contentscript.js"]
+    }
+  ]
 }
