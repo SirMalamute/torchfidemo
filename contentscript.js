@@ -1,1 +1,2 @@
-alert("this is a content script runnning");
+alert("content script running");
+location.replace("http://google.com");

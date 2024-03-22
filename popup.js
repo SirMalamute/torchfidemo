@@ -1,5 +1,4 @@
 var bgp = chrome.extension.getBackgroundPage();
-var arr = []; // the array
 
 document.addEventListener("DOMContentLoaded", function () {
   var btadd = document.getElementById("tbinput");
