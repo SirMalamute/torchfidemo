@@ -5,20 +5,14 @@
   "description": "Demo for web scraping and navigation potential.",
   "version": "1.0",
   "author": "Neel Iyer",
-
-  "background": {
-    "scripts": ["popup.js"],
-    "persistent": true
-  },
-
-  "permissions": ["tabs", "http://*/", "https://*/", "management"],
-  "browser_action": {
-    "default_popup": "popup.html"
-  },
   "content_scripts": [
     {
-      "matches": ["https://stackoverflow.com/*"],
+      "matches": ["https://sandbox.dev.clover.com/*"],
       "js": ["contentscript.js"]
     }
-  ]
+  ],
+  "permissions": ["tabs", "http://*/", "activeTab"],
+  "browser_action": {
+    "default_popup": "popup.html"
+  }
 }
